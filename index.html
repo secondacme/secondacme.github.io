@@ -245,24 +245,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
   <hr>
 
+<div class="container">
   <!-- Filter Tags -->
-  <div class="d-flex justify-content-center mb-4">
-    <button class="btn all-button filter-button" data-filter="all">Show All</button>
-    <button class="btn filter-button tag1" data-filter="tag1">Integration</button>
-    <button class="btn filter-button tag2" data-filter="tag2">Apps</button>
-    <button class="btn filter-button tag3" data-filter="tag3">How to</button>
-    <button class="btn filter-button tag4" data-filter="tag4">Groups</button>
-    <button class="btn filter-button tag5" data-filter="tag5">Videos</button>
-    <button class="btn filter-button tag7" data-filter="tag7">Official</button>
-    <button class="btn filter-button tag6" data-filter="tag6">Articles</button>
-
-    <!--
-     <button class="btn filter-button tag8" data-filter="tag8">Tag 8</button>
-    <button class="btn filter-button tag9" data-filter="tag9">Tag 9</button>
-    <button class="btn filter-button tag10" data-filter="tag10">Tag 10</button>
-
-    !-->
+  <div class="d-flex flex-wrap justify-content-center gap-1 mb-4">
+    <button class="btn btn-primary all-button filter-button" data-filter="all">Show All</button>
+    <button class="btn btn-primary filter-button tag1" data-filter="tag1">Integration</button>
+    <button class="btn btn-primary filter-button tag2" data-filter="tag2">Apps</button>
+    <button class="btn btn-primary filter-button tag3" data-filter="tag3">How to</button>
+    <button class="btn btn-primary filter-button tag4" data-filter="tag4">Groups</button>
+    <button class="btn btn-primary filter-button tag5" data-filter="tag5">Videos</button>
+    <button class="btn btn-primary filter-button tag7" data-filter="tag7">Official</button>
+    <button class="btn btn-primary filter-button tag6" data-filter="tag6">Articles</button>
   </div>
+</div>
+
+<style>
+  /* Custom styles to enhance responsiveness */
+  .filter-button {
+    min-width: 100px; /* Ensure buttons are not too small */
+  }
+  
+</style>
+
 
   <hr>
 
