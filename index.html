@@ -4,72 +4,379 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Our website is coming soon! Stay tuned.">
-  <title>Pipedrive Integration</title>
-  <!-- Google tag (gtag.js) -->
+  <title>Pipedrive Integration - How to Connect with Quickbooks, Mailchimp, WordPress website and more useful info</title>
+  <meta name="title" content="Pipedrive Integration - Tips to get the most out of Pipedrive CRM">
+<meta name="description" content="Helping Pipedrive users learn fast. Apps, Email integration and more info on how to connect pipedrive with apps like quickbooks, mailchimp, shopify">
+<meta name="keywords" content="pipedrive, integration, quickbooks, pricing, costs">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+
+  <!-- Google Tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MLZHS9QRB2"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-  
     gtag('config', 'G-MLZHS9QRB2');
   </script>
 
-  <style>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
     body {
-      margin: 0;
-      padding: 0;
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+ 
       display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: linear-gradient(to bottom, #1a73e8, #4285f4);
-      font-family: Arial, sans-serif;
-      color: white;
-      text-align: center;
+      flex-direction: column;
+      min-height: 100vh;
+      color: #213343;
     }
+
+    .container {
+      flex: 1;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: 20px;
+      position: relative;
+      bottom: 0;
+    }
+
     h1 {
       font-size: 3rem;
       margin-bottom: 0.5rem;
     }
+
     p {
       font-size: 1.2rem;
       margin-bottom: 1.5rem;
     }
-    .subscribe {
-      display: flex;
-      gap: 10px;
-    }
-    input[type="email"] {
-      padding: 10px;
-      font-size: 1rem;
-      border: none;
-      border-radius: 4px;
-      outline: none;
-    }
-    button {
-      padding: 10px 20px;
-      font-size: 1rem;
-      color: white;
-      background-color: #34a853;
-      border: none;
-      border-radius: 4px;
+
+#item-container {
+  display: flex; /* Use flexbox instead of grid */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 20px; /* Maintain spacing between items */
+}
+ 
+
+
+    .item {
+      padding: 2em;
       cursor: pointer;
+      max-width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 290px;
+      min-height: 0;
+      background: #FFFFFF;
+      transform: scale(0.95);
+      border: 1px solid #e5e8ed;
+      border-radius: 15px;
+      box-shadow: 0 2px 4px rgba(3,27,78,.06);
+      transition: box-shadow 0.1s ease, transform 0.1s ease;
     }
-    button:hover {
-      background-color: #2c8b45;
+
+    .item:hover {
+      box-shadow: 0 10px 20px rgba(3,27,78,.1); 
+      transform: scale(1);
+      transition-duration: 0.6s;
     }
+
+    .item h5 {
+      font-weight: bold;
+      font-size: 1.28571429em;
+      margin-top: -0.21425em;
+      line-height: 1.28571429em;
+    }
+
+    .item p {
+      margin: 0em 0em 0.5em;
+    }
+
+    .item .badge {
+      text-transform: uppercase;
+      font-size: 1em;
+      color: rgba(0, 0, 0, 0.4);
+    }
+
+.hidden {
+  display: none !important; /* Ensure the item is removed from layout */
+}
+
+
+
+    .filter-button {
+      margin: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+    }
+    .item a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .item p {
+      font-size: 0.9em;
+      padding: 0.3em;
+    }
+
+    .all-button
+    {
+      color: #007bff;
+      background-color: #fff;
+    }
+
+    .filter-button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Specific tag colors */
+    /* Integration (Blue) */
+    .tag1 {
+      background-color: #4285F4;
+      color: #FFFFFF;
+    }
+
+    /* App (Green) */
+    .tag2 {
+      background-color: #34A853;
+      color: #FFFFFF;
+    }
+
+    /* How to (Yellow) */
+    .tag3 {
+      background-color: #FBBC05;
+      color: #FFFFFF;
+    }
+
+    /* Groups (Red) */
+    .tag4 {
+      background-color: #EA4335;
+      color: #FFFFFF;
+    }
+
+    /* Videos (Purple) */
+    .tag5 {
+      background-color: #9C27B0;
+      color: #FFFFFF;
+    }
+
+    /* Tag 6 (Orange) */
+    .tag6 {
+      background-color: #FF9800;
+      color: #FFFFFF;
+    }
+
+    /* Tag 7 (Teal) */
+    .tag7 {
+      background-color: #009688;
+      color: #FFFFFF;
+    }
+
+    /* Tag 8 (Blue Grey) */
+    .tag8 {
+      background-color: #607D8B;
+      color: #FFFFFF;
+    }
+
+    /* Tag 9 (Light Blue) */
+    .tag9 {
+      background-color: #03A9F4;
+      color: #FFFFFF;
+    }
+
+    /* Integration0 (Pink) */
+    .tag10 {
+      background-color: #E91E63;
+      color: #FFFFFF;
+    }
+
   </style>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.filter-button');
+  const items = document.querySelectorAll('.item');
+  const container = document.getElementById('item-container');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+
+      items.forEach(item => {
+        const tags = item.getAttribute('data-tag').split(',');
+        if (filter === 'all' || tags.includes(filter)) {
+          item.classList.remove('hidden'); // Show matching items
+        } else {
+          item.classList.add('hidden'); // Hide non-matching items
+        }
+      });
+
+      // Force re-layout of the grid container
+      container.style.gridAutoRows = 'auto';
+    });
+  });
+});
+
+  </script>
 </head>
 <body>
-  <div>
-    <h1>Pipedrive Integration</h1>
-    <p>Our website is under construction. Stay tuned for something amazing!</p>
-    <div class="subscribe">
-      <input type="email" placeholder="Enter your email" aria-label="Email Address">
-      <button>Notify Me</button>
-    </div>
+<div class="container py-4" style="margin-top:5em;">
+  <!-- Title Section -->
+  <div class="text-center mb-4">
+    <a style="text-decoration: none; color: #213343;" href="">
+    <h1>Pipedrive Integration</h1></a>
+    <p class="text-muted">Find apps, automations, quick tips, answers and resources to get the most out of Pipedrive.</p>
   </div>
+
+  <hr>
+
+  <!-- Filter Tags -->
+  <div class="d-flex justify-content-center mb-4">
+    <button class="btn all-button filter-button" data-filter="all">Show All</button>
+    <button class="btn filter-button tag1" data-filter="tag1">Integration</button>
+    <button class="btn filter-button tag2" data-filter="tag2">Apps</button>
+    <button class="btn filter-button tag3" data-filter="tag3">How to</button>
+    <button class="btn filter-button tag4" data-filter="tag4">Groups</button>
+    <button class="btn filter-button tag5" data-filter="tag5">Videos</button>
+    <button class="btn filter-button tag7" data-filter="tag7">Official</button>
+    <button class="btn filter-button tag6" data-filter="tag6">Articles</button>
+
+    <!--
+     <button class="btn filter-button tag8" data-filter="tag8">Tag 8</button>
+    <button class="btn filter-button tag9" data-filter="tag9">Tag 9</button>
+    <button class="btn filter-button tag10" data-filter="tag10">Tag 10</button>
+
+    !-->
+  </div>
+
+  <hr>
+
+  <!-- List of Posts -->
+  <div id="item-container">
+
+    <div class="item" data-tag="tag1,tag2">
+      <a href="https://www.pipedrive.com/en/marketplace/app/quick-books/06b965569cd0584e" title="Pipedrive Quickbook Integration" target="_blank">
+        <h5>Pipedrive Quickbooks integration</h5>
+        <p>Overall good. Some users have reported issues with setting up multiple users, no support for multiple currencies, no support for projects and issues with pulling invoices.</p>
+        <div>
+          <span class="badge tag1">Integration</span>
+          <span class="badge tag2">Apps</span>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="item" data-tag="tag4,tag7">
+      <a href="https://community.pipedrive.com/" title="Official Pipedrive Community" target="_blank">
+        <h5>Official Pipedrive Community</h5>
+        <p>Connect with experts, collaborate with users, share ideas</p>
+        <div>
+          <span class="badge tag4">Groups</span>
+          <span class="badge tag7">Official</span>
+        </div>
+      </a>
+    </div>
+    <div class="item" data-tag="tag4">
+      <a href="https://www.reddit.com/r/pipedrive/" title="Pipedrive Subreddit" target="_blank">
+        <h5>Pipedrive Subreddit</h5>
+        <p>Pipedrive group on reddit. Has questions, answers, reviews from users.</p>
+        <div>
+          <span class="badge tag4">Groups</span>
+        </div>
+      </a>
+    </div>
+ 
+
+    <div class="item" data-tag="tag5,tag3">
+      <a href="https://www.youtube.com/watch?v=K0sUCkFUr-U" title="Video Getting started with Pipedrive" target="_blank">
+        <h5>Getting Stared with Pipedrive Tutorial</h5>
+        <p>Explains how the Pipedrive pipeline view works, how to create Pipedrive deals, using leads vs. deals, tracking deal value and products, setting up custom fields, adding notes and activities, sending emails, and managing follow-ups. 40+ mins.</p>
+        <div>
+          <span class="badge tag5">Videos</span>
+          <span class="badge tag3">How to</span>
+
+        </div>
+      </a>
+    </div>
+ 
+    <div class="item" data-tag="tag1,tag2">
+      <a href="https://www.pipedrive.com/en/marketplace/app/mailchimp/f82d857cc4883307" title="Pipedrive Mailchimp Integration" target="_blank">
+        <h5>Pipedrive MailChimp integration</h5>
+        <p>Very good and easy to use. However it has no integration back to Pipedrive, no there is no 2 way sync.</p>
+        <div>
+          <span class="badge tag1">Integration</span>
+          <span class="badge tag2">Apps</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="item" data-tag="tag6,tag3">
+      <a href="https://www.reddit.com/r/salesforce/comments/113qcx6/pipedrive_salesforce_migration/" title="Thiins to keep in mind while migrating from Salesforce to Pipedrive" target="_blank">
+        <h5>Migrating from Salesforce to Pipedrive - Things to Keep in mind</h5>
+        <p>How not to repeat the same mistakes while moving to the new system</p>
+        <div>
+          <span class="badge tag6">Articles</span>
+          <span class="badge tag3">How to</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="item" data-tag="tag6,tag3">
+      <a href="https://community.pipedrive.com/discussion/1274/uk-prospecting
+" target="_blank">
+        <h5>Pipedrive Community - Prospecting Tools Discussion</h5>
+        <p>Top apps used by Pipedrive power users for email, data enrichment and phone</p>
+        <div>
+          <span class="badge tag6">Articles</span>
+          <span class="badge tag3">How to</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="item" data-tag="tag6">
+      <a href="https://www.bardeen.ai/answers/how-much-does-pipedrive-cost" target="_blank">
+        <h5>Pipedrive Costs - Pricing in 2025</h5>
+        <p>How much does it cost? Explains the 5 pricing tiers and the add-on charges to watch out for</p>
+        <div>
+          <span class="badge tag6">Articles</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="item" data-tag="tag6,tag7">
+      <a href="https://developers.pipedrive.com/tutorials/create-a-deal-pipedrive-api" target="_blank">
+        <h5>How to use the Pipedrive API to Create Deals (Example)</h5>
+        <p>Fully working example of using Pipedrice API, setting up credentials Client ID, Client secret for custom development</p>
+        <div>
+          <span class="badge tag6">Articles</span>
+          <span class="badge tag7">Official</span>
+
+        </div>
+      </a>
+    </div>
+
+
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Pipedrive Integrations</p>
+</footer>
+
 </body>
 </html>
-
